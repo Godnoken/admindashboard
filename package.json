@@ -1,0 +1,22 @@
+{
+  "name": "admindashboard",
+  "version": "1.0.0",
+  "description": "Admin dashboard",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Godnoken/admindashboard.git"
+  },
+  "author": "Sebastian Öjefors <sebastian.ojefors@gmail.com> (https://github.com/Godnoken)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Godnoken/admindashboard/issues"
+  },
+  "homepage": "https://github.com/Godnoken/admindashboard#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
