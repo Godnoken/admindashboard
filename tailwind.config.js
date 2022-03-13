@@ -7,13 +7,16 @@ module.exports = {
     
     extend: {
       colors: {
-        main: "#1992D4",
-        mainHover: "#1577ac"
+        mainColor: "#1992D4",
+        mainColorHover: "#1577ac",
       },
       fontSize: {
-        main: "clamp(12px, 5 * (1vw + 1vh) / 2, 100px)",
-        desktopMain: "clamp(12px, 2 * (1vw + 1vh) / 2, 100px)",
+        cardH: "clamp(12px, 2.8 * (1vw + 1vh) / 2, 22px)",
+        cardP: "clamp(12px, 2.2 * (1vw + 1vh) / 2, 18px)",
       },
+      boxShadow: {
+        card: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
+      }
     },
   },
   plugins: [],

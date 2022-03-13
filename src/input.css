@@ -6,11 +6,11 @@
 @layer components {
 
     .button {
-        @apply h-[50%] w-full bg-main self-center rounded-3xl text-white text-[3.4vw] hover:bg-mainHover transition-colors duration-200
+        @apply h-[50%] w-full bg-mainColor self-center rounded-3xl text-white text-[3.4vw] hover:bg-mainColorHover transition-colors duration-200
     }
 
     .projectCard {
-        @apply h-48 grid grid-cols-[3%_97%] grid-rows-[2fr_1fr] bg-white
+        @apply h-48 grid grid-cols-[3%_97%] grid-rows-[2fr_1fr] bg-white shadow-card
     }
 
     .projectCardBar {
@@ -18,15 +18,19 @@
     }
 
     .projectCardText {
-        @apply text-sm self-center pl-[6%] pr-[20%] pt-[5%]
+        @apply text-cardP self-center pl-[6%] pr-[20%] pt-[5%]
     }
 
     .projectCardHeader {
-        @apply font-bold text-base
+        @apply font-bold text-cardH
     }
 
     .projectCardNav {
         @apply col-[2_/_4] w-full h-10 flex justify-end self-center gap-[5%] pr-[10%]
+    }
+
+    .projectCardIcon {
+        @apply h-8 w-8 fill-black hover:fill-mainColor cursor-pointer transition-colors duration-200
     }
 
     #burgerMenu {
@@ -52,7 +56,19 @@
         @apply h-8 w-8
     }
 
-    .projectCardIcon {
-        @apply h-8 w-8 fill-black hover:fill-main cursor-pointer transition-colors duration-200
+    .trendingAccount {
+        @apply grid grid-cols-[1fr_3fr] cursor-pointer
+    }
+
+    .trendingImg {
+        @apply col-[1_/_2] row-[1_/_3] h-8 w-8 self-center justify-self-center bg-black rounded-full
+    }
+
+    .trendingHeader {
+        @apply col-[2_/_3] font-bold text-cardH
+    }
+
+    .trendingParagraph {
+        @apply col-[2_/_3] text-cardP
     }
 }
