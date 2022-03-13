@@ -1,7 +1,9 @@
 const burger = document.querySelector("#burger");
 const burgerMenu = document.querySelector("#burgerMenu");
+const navMenuItems = document.querySelectorAll(".navMenuItem");
 
 burger.addEventListener("click", handleBurgerMenu);
+navMenuItems.forEach(item => item.addEventListener("click", handleBurgerMenu))
 
 
 function handleBurgerMenu() {
