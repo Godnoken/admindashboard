@@ -18,7 +18,7 @@
     }
 
     .projectCardText {
-        @apply text-sm self-center pl-[6%] pr-[20%]
+        @apply text-sm self-center pl-[6%] pr-[20%] pt-[5%]
     }
 
     .projectCardHeader {
@@ -26,6 +26,32 @@
     }
 
     .projectCardNav {
-        @apply col-[2_/_4] w-full h-10
+        @apply col-[2_/_4] w-full h-10 flex justify-end self-center gap-[5%] pr-[10%]
+    }
+
+    #burgerMenu {
+        position: fixed;
+        display: grid;
+        top: calc(8% - 1px);
+        left: 0;
+        height: calc(77vh + 1px);
+        width: 100%;
+        clip-path: inset(0 0 77vh 0);
+        transition: 0.5s;
+        background-color: #1992D4;
+        color: white;
+        padding: 0 12.5% 0 12.5%;
+    }
+
+    .navMenuItem {
+        @apply flex items-center gap-[8%] font-bold text-base
+    }
+
+    .navMenuIcon {
+        @apply h-8 w-8
+    }
+
+    .projectCardIcon {
+        @apply h-8 w-8 fill-black
     }
 }
