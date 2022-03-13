@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+
+    .button {
+        @apply h-[50%] w-full bg-[#1992D4] self-center rounded-3xl text-white
+    }
+
+    .projectCard {
+        @apply h-48 grid grid-cols-[3%_97%] grid-rows-[2fr_1fr] bg-white
+    }
+
+    .projectCardBar {
+        @apply bg-orange-300 row-[1_/_3]
+    }
+
+    .projectCardText {
+        @apply text-sm self-center pl-[6%] pr-[20%]
+    }
+
+    .projectCardHeader {
+        @apply font-bold text-base
+    }
+
+    .projectCardNav {
+        @apply col-[2_/_4] w-full h-10
+    }
+}
