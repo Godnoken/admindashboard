@@ -11,7 +11,7 @@ navMenuItems.forEach(item => item.addEventListener("click", (event) => { handleB
 // Shows/hides menu
 function handleBurgerMenu() {
     if (burgerMenu.classList.contains("activeBurgerMenu")) {
-        burgerMenu.style.clipPath = "inset(0 0 77vh 0)";
+        burgerMenu.style.clipPath = "inset(0 0 100% 0)";
         burgerMenu.classList.toggle("activeBurgerMenu");
     }
     else {
