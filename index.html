@@ -10,7 +10,7 @@
 </head>
 <body class="select-none">
     <div class="absolute w-full overflow-y-scroll top-[0.5px] bottom-[0.5px] overscroll-y-contain">
-        <div class="fixed h-[8vh] w-screen flex justify-between items-center pl-5 pr-3 bg-[#1992D4]">
+        <div class="fixed top-0 h-[8vh] w-screen flex justify-between items-center pl-5 pr-3 bg-[#1992D4]">
             <h1 class="text-white text-appHeader font-bold">Dashboard</h1>
             <svg id="burger" class="h-bigIcon w-bigIcon fill-white cursor-pointer" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg"><path style="stroke-width:2.58825" d="M10 209v33h88v-67H10ZM113 188v54h88V134h-88zM10 105v55h88V51H10ZM113 85v33h88V51h-88z"/></svg>
             <nav id="burgerMenu">
@@ -162,90 +162,11 @@
                     Sebastian Öjefors <a href="https://github.com/Godnoken/" target="_blank">(@godnoken)</a>
                 </p>
             </div>
-        </section>
-        <section id="announcementsContainer" class="activeContainer px-4">
-            <h2 class="font-bold text-center text-containerHeader mb-3">Announcements</h2>
-            <div class="grid gap-[4vh] py-[6vh] px-[8vw] rounded-lg bg-white select-text">
-                <article class="grid">
-                    <h3 class="font-bold text-cardH">Site Maintenance</h3>
-                    <p class="text-cardP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec est eu dui mollis molestie. Aenean tristique vitae nisi non interdum. Phasellus mollis sagittis nunc.</p>
-                </article>
-                <div class="h-[2px] w-full bg-slate-300"></div>
-                <article class="grid">
-                    <h3 class="font-bold text-cardH">Community Share Day</h3>
-                    <p class="text-cardP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec est eu dui mollis molestie. Aenean tristique vitae nisi non interdum. Phasellus mollis sagittis nunc.</p>
-                </article>
-                <div class="h-[2px] w-full bg-slate-300"></div>
-                <article class="grid">
-                    <h3 class="font-bold text-cardH">Update Privacy Policy</h3>
-                    <p class="text-cardP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec est eu dui mollis molestie. Aenean tristique vitae nisi non interdum. Phasellus mollis sagittis nunc.</p>
-                </article>
+            <div class="grid grid-cols-3 gap-[4vw]">
+                <button class="button">New</button>
+                <button class="button">Upload</button>
+                <button class="button">Share</button>
             </div>
-        </section>
-        <section id="trendingContainer" class="hidden px-4 w-full">
-            <h2 class="font-bold text-center text-containerHeader mb-3">Trending</h2>
-            <div class="grid gap-[4vh] py-[6vh] rounded-lg bg-white">
-                <article class="trendingAccount">
-                    <img class="trendingImg"
-                    src="https://avatars.githubusercontent.com/u/37755182?v=4"
-                    alt="profile picture">
-                    <h3 class="trendingHeader">@arlen123</h3>
-                    <p class="trendingParagraph">I am only good at ctr-c ctrl-v</p>
-                </article>
-                <article class="trendingAccount">
-                    <img class="trendingImg"
-                    src="https://avatars.githubusercontent.com/u/14563415?v=4"
-                    alt="profile picture">
-                    <h3 class="trendingHeader">@nilssonemil</h3>
-                    <p class="trendingParagraph">Ooho! Stiligt</p>
-                </article>
-                <article class="trendingAccount">
-                    <img class="trendingImg"
-                    src="https://avatars.githubusercontent.com/u/77117588?v=4"
-                    alt="profile picture">
-                    <h3 class="trendingHeader">@JoseAnibal</h3>
-                    <p class="trendingParagraph">Not the real Hannibal</p>
-                </article>
-                <article class="trendingAccount">
-                    <div class="trendingImg"></div>
-                    <h3 class="trendingHeader">@George</h3>
-                    <p class="trendingParagraph">Legendary left wing</p>
-                </article>
-                <article class="trendingAccount">
-                    <img class="trendingImg"
-                    src="https://avatars.githubusercontent.com/u/17499594?v=4"
-                    alt="profile picture">
-                    <h3 class="trendingHeader">@Godnoken</h3>
-                    <p class="trendingParagraph">Djuuuuuuuuuuuuuuuuu</p>
-                </article>
-                <article class="trendingAccount">
-                    <div class="trendingImg"></div>
-                    <h3 class="trendingHeader">@Ronin</h3>
-                    <p class="trendingParagraph">Rice?</p>
-                </article>
-                <article class="trendingAccount">
-                    <div class="trendingImg"></div>
-                    <h3 class="trendingHeader">@Haydn</h3>
-                    <p class="trendingParagraph">I will game test</p>
-                </article>
-            </div>
-        </section>
-    </main>
-    <div class="fixed h-[15%] w-screen bottom-0 grid grid-rows-2 bg-white px-4">
-        <div class="grid grid-cols-[1fr_2fr]">
-            <a class="w-bigIcon h-bigIcon self-center justify-self-center" href="https://github.com/Godnoken/" target="_blank"><img class="rounded-full"
-            src="https://avatars.githubusercontent.com/u/17499594?v=4"
-            alt="Profile picture"></a>
-            <p class="self-center font-bold text-cardP">
-                <span>Hi there,</span><br>
-                Sebastian Öjefors <a href="https://github.com/Godnoken/" target="_blank">(@godnoken)</a>
-            </p>
         </div>
-        <div class="grid grid-cols-3 gap-[4vw]">
-            <button class="button">New</button>
-            <button class="button">Upload</button>
-            <button class="button">Share</button>
-        </div>
-    </div>
 </body>
 </html>
