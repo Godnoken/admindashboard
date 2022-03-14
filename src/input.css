@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+
+    .button {
+        @apply h-[50%] w-full bg-mainColor self-center rounded-3xl text-white text-cardP hover:bg-mainColorHover transition-colors duration-200
+    }
+
+    .projectCard {
+        @apply grid grid-cols-[3%_97%] grid-rows-[2fr_1fr] bg-white shadow-card
+    }
+
+    .projectCardBar {
+        @apply bg-orange-300 row-[1_/_3]
+    }
+
+    .projectCardText {
+        @apply text-cardP self-center pl-[6%] pr-[20%] pt-[5%] select-text
+    }
+
+    .projectCardHeader {
+        @apply font-bold text-cardH
+    }
+
+    .projectCardNav {
+        @apply col-[2_/_4] w-full flex justify-end self-center gap-[5%] pr-[10%]
+    }
+
+    .projectCardIcon {
+        @apply h-smallIcon w-smallIcon fill-black hover:fill-mainColor cursor-pointer transition-colors duration-200
+    }
+
+    #burgerMenu {
+        position: fixed;
+        display: grid;
+        top: calc(8% - 1px);
+        left: 0;
+        height: calc(77vh + 1px);
+        width: 100%;
+        clip-path: inset(0 0 77vh 0);
+        transition: 0.5s;
+        background-color: #1992D4;
+        color: white;
+        padding: 0 12.5% 0 12.5%;
+        cursor: default;
+    }
+
+    .navMenuItem {
+        @apply flex items-center gap-[8%] font-bold text-cardP cursor-pointer hover:underline decoration-2 underline-offset-8
+    }
+
+    .navMenuIcon {
+        @apply h-smallIcon w-smallIcon pointer-events-none
+    }
+
+    .trendingAccount {
+        @apply grid grid-cols-[1fr_3fr] cursor-pointer
+    }
+
+    .trendingImg {
+        @apply col-[1_/_2] row-[1_/_3] h-bigIcon w-bigIcon self-center justify-self-center bg-black rounded-full
+    }
+
+    .trendingHeader {
+        @apply col-[2_/_3] font-bold text-cardH
+    }
+
+    .trendingParagraph {
+        @apply col-[2_/_3] text-cardP
+    }
+}
