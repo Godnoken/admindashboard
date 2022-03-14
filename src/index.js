@@ -9,12 +9,6 @@ burger.addEventListener("click", handleBurgerMenu);
 navMenuItems.forEach(item => item.addEventListener("click", (event) => { handleBurgerMenu(); handleContainers(event); }))
 
 
-// Prevents mobile layout from breaking on input focus. Layout breaks because of
-// using vh on containers.
-const viewport = document.querySelector("meta[name=viewport]");
-viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
-
-
 // Shows/hides menu
 function handleBurgerMenu() {
     if (burgerMenu.classList.contains("activeBurgerMenu")) {
