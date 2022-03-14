@@ -36,7 +36,7 @@
     #burgerMenu {
         position: fixed;
         display: grid;
-        top: calc(8% - 1px);
+        top: calc(8vh - 1px);
         left: 0;
         height: calc(77vh + 1px);
         width: 100%;
