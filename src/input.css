@@ -46,6 +46,7 @@
         color: white;
         padding: 0 12.5% 0 12.5%;
         cursor: default;
+        z-index: 1;
     }
 
     .navMenuItem {
