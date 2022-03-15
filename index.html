@@ -10,10 +10,13 @@
 </head>
 <body class="select-none">
     <div class="absolute w-full overflow-y-scroll top-[0.5px] bottom-[0.5px] overscroll-y-contain">
-        <div class="fixed top-0 h-[8vh] w-screen flex justify-between items-center pl-5 pr-3 bg-[#1992D4]">
+        <div class="fixed top-0 h-[8vh] w-screen flex justify-between items-center pl-5 pr-3 bg-mainColor dark:bg-darkMainColor transition-colors duration-300">
             <h1 class="text-white text-appHeader font-bold">Dashboard</h1>
-            <svg id="burger" class="h-bigIcon w-bigIcon fill-white cursor-pointer" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg"><path style="stroke-width:2.58825" d="M10 209v33h88v-67H10ZM113 188v54h88V134h-88zM10 105v55h88V51H10ZM113 85v33h88V51h-88z"/></svg>
-            <nav id="burgerMenu">
+            <div class="flex gap-[4vw]">
+                <svg id="darkLight" class="h-bigIcon w-bigIcon fill-white cursor-pointer" viewBox="0 0 24 24"><path d="M7.5 2a6.5 6.5 0 0 0 0 11C4.5 13 2 10.5 2 7.5A5.5 5.5 0 0 1 7.5 2m11.6 1.5 1.4 1.4L4.9 20.5l-1.4-1.4L19.1 3.5m-6.2 2.4L11.4 5 10 6l.4-1.7-1.4-1 1.8-.2.5-1.6L12 3h1.7l-1.3 1.2.5 1.6M9.6 9.5l-1.2-.7-1 .8.3-1.3-1.1-.9h1.3L8.4 6l.5 1.2h1.3l-1 1 .4 1.2m9.4 4a5.5 5.5 0 0 1-5.5 5.5c-1.2 0-2.3-.4-3.3-1l7.7-7.8c.7 1 1.1 2 1.1 3.3M14.6 20l2.8-1.2-.3 3.4-2.5-2.2m4.3-2.7 1.2-2.8 2.2 2.5-3.4.3m1.2-5-1.2-2.8 3.4.3-2.2 2.5M9.6 19l2.8 1.2-2.5 2.2-.3-3.4Z"/></svg>
+                <svg id="burger" class="h-bigIcon w-bigIcon fill-white cursor-pointer" viewBox="0 0 24 24"><path d="M3 11h8V3H3m0 18h8v-8H3m10 8h8v-8h-8m0-10v8h8V3"/></svg>
+            </div>
+            <nav id="burgerMenu" class="bg-mainColor text-white dark:bg-darkSecondaryColor">
                 <ul class="flex flex-col justify-center gap-[2.5vh]">
                     <li id="home" data-class="announcementsContainer" class="navMenuItem"><svg class="navMenuIcon fill-white" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>Home</li>
                     <li id="profile" data-class="projectsContainer" class="navMenuItem"><svg class="navMenuIcon fill-white" viewBox="0 0 24 24"><path d="M22 3H2C1 3 0 4 0 5v14c0 1 1 2 2 2h20c1 0 2-1 2-2V5c0-1-1-2-2-2m0 16H2V5h20v14m-8-2v-1.3c0-1.6-3.3-2.4-5-2.4-1.7 0-5 .8-5 2.4V17h10M9 7a2.5 2.5 0 0 0-2.5 2.5A2.5 2.5 0 0 0 9 12a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 9 7m5 0v1h6V7h-6m0 2v1h6V9h-6m0 2v1h4v-1h-4"/></svg>Profile</li>
@@ -30,7 +33,7 @@
                 </ul>
             </nav>
         </div>
-        <main class="grid pt-mainTopPadding pb-mainBotPadding bg-[#E5E5E5]">
+        <main class="grid pt-mainTopPadding pb-mainBotPadding bg-[#E5E5E5] dark:bg-darkSecondaryColor dark:text-white transition-colors duration-300">
             <section id="projectsContainer" class="hidden px-4">
                 <h2 class="font-bold text-center text-containerHeader mb-3">Your Projects</h2>
                 <div class="grid gap-[6vh]">
@@ -86,7 +89,7 @@
             </section>
             <section id="announcementsContainer" class="activeContainer px-4">
                 <h2 class="font-bold text-center text-containerHeader mb-3">Announcements</h2>
-                <div class="grid gap-[4vh] py-[6vh] px-[8vw] rounded-lg bg-white select-text">
+                <div class="grid gap-[4vh] py-[6vh] px-[8vw] rounded-lg bg-white select-text dark:bg-darkAccentColor">
                     <article class="grid">
                         <h3 class="font-bold text-cardH">Site Maintenance</h3>
                         <p class="text-cardP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec est eu dui mollis molestie. Aenean tristique vitae nisi non interdum. Phasellus mollis sagittis nunc.</p>
@@ -105,7 +108,7 @@
             </section>
             <section id="trendingContainer" class="hidden px-4 w-full">
                 <h2 class="font-bold text-center text-containerHeader mb-3">Trending</h2>
-                <div class="grid gap-[4vh] py-[6vh] rounded-lg bg-white">
+                <div class="grid gap-[4vh] py-[6vh] rounded-lg bg-white dark:bg-darkAccentColor">
                     <article class="trendingAccount">
                         <img class="trendingImg"
                         src="https://avatars.githubusercontent.com/u/37755182?v=4"
@@ -152,7 +155,7 @@
                 </div>
             </section>
         </main>
-        <div class="fixed h-[15vh] w-screen bottom-0 grid grid-rows-2 bg-white px-4">
+        <div class="fixed h-[15vh] w-screen bottom-0 grid grid-rows-2 bg-white px-4 dark:bg-darkMainColor dark:text-white transition-colors duration-300">
             <div class="grid grid-cols-[1fr_2fr]">
                 <a class="w-bigIcon h-bigIcon self-center justify-self-center" href="https://github.com/Godnoken/" target="_blank"><img class="rounded-full"
                 src="https://avatars.githubusercontent.com/u/17499594?v=4"
