@@ -10,7 +10,7 @@
     <script src="./src/index.js" defer></script>
 </head>
 <body class="select-none">
-    <div class="absolute w-full overflow-y-scroll top-[0.5px] bottom-[0.5px] overscroll-y-contain">
+    <div class="absolute w-full overflow-y-scroll top-[0.5px] bottom-[0.5px] overscroll-y-contain bg-[#E5E5E5] dark:bg-darkSecondaryColor">
         <div class="fixed top-0 h-[8vh] w-screen flex justify-between items-center pl-5 pr-3 bg-mainColor dark:bg-darkMainColor transition-colors duration-300">
             <h1 class="text-white text-appHeader font-bold">Dashboard</h1>
             <div class="flex gap-[4vw]">
@@ -34,7 +34,7 @@
                 </ul>
             </nav>
         </div>
-        <main class="grid pt-mainTopPadding pb-mainBotPadding bg-[#E5E5E5] dark:bg-darkSecondaryColor dark:text-white transition-colors duration-300">
+        <main class="grid pt-mainTopPadding pb-mainBotPadding dark:text-white transition-colors duration-300">
             <section id="projectsContainer" class="hidden px-4">
                 <h2 class="font-bold text-center text-containerHeader mb-3">Your Projects</h2>
                 <div class="grid gap-[6vh]">
@@ -90,7 +90,7 @@
             </section>
             <section id="announcementsContainer" class="activeContainer px-4">
                 <h2 class="font-bold text-center text-containerHeader mb-3">Announcements</h2>
-                <div class="grid gap-[4vh] py-[6vh] px-[8vw] rounded-lg bg-white select-text dark:bg-darkAccentColor transition-colors duration-300">
+                <div class="grid gap-[4vh] py-[6vh] px-[8vw] rounded-lg bg-white select-text dark:bg-darkAccentColor">
                     <article class="grid">
                         <h3 class="font-bold text-cardH">Site Maintenance</h3>
                         <p class="text-cardP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec est eu dui mollis molestie. Aenean tristique vitae nisi non interdum. Phasellus mollis sagittis nunc.</p>
