@@ -10,7 +10,7 @@
     }
 
     .projectCard {
-        @apply grid grid-cols-[3%_97%] grid-rows-[2fr_1fr] bg-white shadow-card dark:bg-darkAccentColor
+        @apply grid grid-cols-[3%_97%] grid-rows-[2fr_1fr] bg-white shadow-card dark:bg-darkAccentColor transition-colors duration-300
     }
 
     .projectCardBar {
