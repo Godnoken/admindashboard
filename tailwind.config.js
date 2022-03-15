@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         mainColor: "#1992D4",
         mainColorHover: "#1577ac",
+        darkMainColor: "#1c1c20",
+        darkSecondaryColor: "#232326",
+        darkAccentColor: "#2c2c30",
       },
       fontSize: {
         appHeader: "clamp(20px, 4 * (1vw + 1vh) / 2, 28px)",
@@ -28,4 +31,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: "class"
 }
