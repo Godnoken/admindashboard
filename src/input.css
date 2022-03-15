@@ -9,6 +9,28 @@
         @apply h-[50%] w-full bg-mainColor self-center rounded-3xl text-white text-cardP hover:bg-mainColorHover transition-colors duration-200 dark:bg-darkAccentColor
     }
 
+    #burgerMenu {
+        position: fixed;
+        display: grid;
+        top: calc(8vh - 1px);
+        left: 0;
+        height: calc(77% + 1px);
+        width: 100%;
+        clip-path: inset(0 0 100% 0);
+        transition: 0.5s;
+        padding: 0 12.5% 0 12.5%;
+        cursor: default;
+        z-index: 1;
+    }
+
+    .navMenuItem {
+        @apply flex items-center gap-[8%] font-bold text-cardP cursor-pointer hover:underline decoration-2 underline-offset-8
+    }
+
+    .navMenuIcon {
+        @apply h-smallIcon w-smallIcon pointer-events-none
+    }
+
     .projectCard {
         @apply grid grid-cols-[3%_97%] grid-rows-[2fr_1fr] bg-white shadow-card dark:bg-darkAccentColor transition-colors duration-300
     }
@@ -31,28 +53,6 @@
 
     .projectCardIcon {
         @apply h-smallIcon w-smallIcon fill-black hover:fill-mainColor cursor-pointer transition-colors duration-200 dark:fill-white dark:hover:fill-mainColor
-    }
-
-    #burgerMenu {
-        position: fixed;
-        display: grid;
-        top: calc(8vh - 1px);
-        left: 0;
-        height: calc(77% + 1px);
-        width: 100%;
-        clip-path: inset(0 0 100% 0);
-        transition: 0.5s;
-        padding: 0 12.5% 0 12.5%;
-        cursor: default;
-        z-index: 1;
-    }
-
-    .navMenuItem {
-        @apply flex items-center gap-[8%] font-bold text-cardP cursor-pointer hover:underline decoration-2 underline-offset-8
-    }
-
-    .navMenuIcon {
-        @apply h-smallIcon w-smallIcon pointer-events-none
     }
 
     .trendingAccount {
