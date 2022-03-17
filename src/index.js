@@ -12,31 +12,36 @@ darkLightSwitch.addEventListener("click", switchDarkLightMode);
 
 // Shows/hides menu
 function handleBurgerMenu() {
-    if (burgerMenu.classList.contains("activeBurgerMenu")) {
-        burgerMenu.style.clipPath = "inset(0 0 100% 0)";
-        burgerMenu.classList.toggle("activeBurgerMenu");
-    }
-    else {
-        burgerMenu.style.clipPath = "inset(0 0 0 0)";
-        burgerMenu.classList.toggle("activeBurgerMenu");
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+        if (burgerMenu.classList.contains("activeBurgerMenu")) {
+            burgerMenu.style.clipPath = "inset(0 0 100% 0)";
+            burgerMenu.classList.toggle("activeBurgerMenu");
+        }
+        else {
+            burgerMenu.style.clipPath = "inset(0 0 0 0)";
+            burgerMenu.classList.toggle("activeBurgerMenu");
+        }
     }
 }
 
 
 // Shows/hides containers
 function handleContainers(event) {
-    const containerClass = event.target.dataset.class;
-    const activeContainer = document.querySelector(".activeContainer");
-    const newActiveContainer = document.querySelector("#" + containerClass);
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+        const containerClass = event.target.dataset.class;
+        const activeContainer = document.querySelector(".activeContainer");
+        const newActiveContainer = document.querySelector("#" + containerClass);
+        const root = document.querySelector("#root");
 
-    window.scrollTo(0, 0);
+        root.scrollTo(0, 0);
 
-    if (containerClass !== undefined && activeContainer !== newActiveContainer) {
-        activeContainer.style.display = "none";
-        activeContainer.classList.remove("activeContainer");
+        if (containerClass !== undefined && activeContainer !== newActiveContainer) {
+            activeContainer.style.display = "none";
+            activeContainer.classList.remove("activeContainer");
 
-        newActiveContainer.style.display = "block";
-        newActiveContainer.classList.add("activeContainer");
+            newActiveContainer.style.display = "block";
+            newActiveContainer.classList.add("activeContainer");
+        }
     }
 }
 
