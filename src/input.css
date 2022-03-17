@@ -6,21 +6,15 @@
 @layer components {
 
     .button {
-        @apply h-[50%] w-full bg-mainColor self-center rounded-3xl text-white text-cardP hover:bg-mainColorHover transition-colors duration-200 dark:bg-darkAccentColor
+        @apply h-[50%] w-full bg-mainColor self-center rounded-3xl text-white text-cardP hover:bg-mainColorHover transition-colors duration-200 dark:bg-darkAccentColor dark:hover:bg-darkSecondaryColor lg:dark:bg-darkMainColor lg:h-[40%]
     }
 
     #burgerMenu {
         position: fixed;
         display: grid;
-        top: calc(8vh - 1px);
         left: 0;
-        height: calc(77% + 1px);
-        width: 100%;
-        clip-path: inset(0 0 100% 0);
         transition: 0.5s;
-        padding: 0 12.5% 0 12.5%;
         cursor: default;
-        z-index: 1;
     }
 
     ::-webkit-scrollbar {
@@ -32,11 +26,11 @@
     }
 
     .navMenuIcon {
-        @apply h-smallIcon w-smallIcon pointer-events-none
+        @apply h-smallIcon w-smallIcon pointer-events-none fill-white group-hover:fill-black dark:group-hover:fill-mainColor
     }
 
     .projectCard {
-        @apply grid grid-cols-[3%_97%] grid-rows-[2fr_1fr] bg-white shadow-card dark:bg-darkAccentColor transition-colors duration-300
+        @apply grid grid-cols-[3%_97%] grid-rows-[2fr_1fr] bg-white shadow-card dark:bg-darkAccentColor transition-colors duration-300 lg:transition-none
     }
 
     .projectCardBar {
@@ -60,7 +54,7 @@
     }
 
     .trendingAccount {
-        @apply grid grid-cols-[1fr_3fr] cursor-pointer
+        @apply grid grid-cols-[1fr_3fr] cursor-pointer lg:gap-x-2
     }
 
     .trendingImg {
@@ -68,10 +62,10 @@
     }
 
     .trendingHeader {
-        @apply col-[2_/_3] font-bold text-cardH
+        @apply col-[2_/_3] font-bold text-cardH lg:text-cardP
     }
 
     .trendingParagraph {
-        @apply col-[2_/_3] text-cardP
+        @apply col-[2_/_3] text-cardP break-all
     }
 }
